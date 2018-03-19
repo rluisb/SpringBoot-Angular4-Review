@@ -19,7 +19,7 @@ public class TaskController {
         return this.taskService.list();
     }
 
-    @PostMapping(value = "/", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/tasks/save", consumes = MediaType.APPLICATION_JSON_VALUE)
     public Task saveTask(@RequestBody Task task) {
         return this.taskService.save(task);
     }
